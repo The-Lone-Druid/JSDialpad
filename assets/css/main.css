@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.bg-lightBlue {
+  background: #5050ff;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.shadow, .dialpad .button-row button.call-button {
+  -webkit-box-shadow: 0px 0px 14px #0000002f;
+          box-shadow: 0px 0px 14px #0000002f;
+}
+
+.bg-white {
+  background: white;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-4 {
+  padding: 24px;
+}
+
+.m-4 {
+  margin: 14px;
+}
+
+.fs-5 {
+  font-size: 16px;
+}
+
+.small-text {
+  font-size: 8px;
+  color: #a0a0a0;
+}
+
+.dialpad {
+  width: 280px;
+}
+
+.dialpad .dialscreen .dialscreen-input {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: #5050ff;
+}
+
+.dialpad .button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dialpad .button-row button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: 5px;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.dialpad .button-row button:active {
+  background: #f1f1f1;
+}
+
+.dialpad .button-row button.call-button {
+  background: #24b124;
+  color: white;
+}
+
+.dialpad .button-row button.call-button:active {
+  background: #107e10;
+}

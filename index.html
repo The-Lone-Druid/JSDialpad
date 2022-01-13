@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>DialPad</title>
+</head>
+<body>
+    
+    <div class="d-flex align-items-center justify-content-center vh-100 bg-lightBlue">
+        <div class="dialpad rounded-10 shadow bg-white overflow-hidden p-4 m-4">
+            <div class="dialscreen">
+                <input type="text" class="dialscreen-input" id="dialscreen-input">
+            </div>
+            <div class="dialbuttons">
+                <div class="button-row">
+                    <button class="dialpad-button clickable" value="1"></button>
+                    <button class="dialpad-button clickable" value="2"></button>
+                    <button class="dialpad-button clickable" value="3"></button>
+                </div>
+                <div class="button-row">
+                    <button class="dialpad-button clickable" value="4"></button>
+                    <button class="dialpad-button clickable" value="5"></button>
+                    <button class="dialpad-button clickable" value="6"></button>
+                </div>
+                <div class="button-row">
+                    <button class="dialpad-button clickable" value="7"></button>
+                    <button class="dialpad-button clickable" value="8"></button>
+                    <button class="dialpad-button clickable" value="9"></button>
+                </div>
+                <div class="button-row">
+                    <button class="dialpad-button clickable" value="*"></button>
+                    <button class="dialpad-button clickable" value="0"></button>
+                    <button class="dialpad-button clickable" value="#"></button>
+                </div>
+                <div class="button-row">
+                    <button class="dialpad-button" onclick="setAsFavourite()">
+                        <i class="material-icons fs-5">star_outline</i>
+                    </button>
+                    <button class="dialpad-button call-button" onclick="call()">
+                        <i class="material-icons fs-5">call</i>
+                    </button>
+                    <button class="dialpad-button" onclick="deleteLastNumber()">
+                        <i class="material-icons fs-5">arrow_back</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
