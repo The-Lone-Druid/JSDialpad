@@ -10,9 +10,21 @@ let numberArray = [];
 let numberString = '';
 
 clickableButtons.forEach(button => {
-    let buttonValue = button.getAttribute('value');
+    let buttonValue = button.value;
     // Set values as the value for current button
     button.innerHTML = buttonValue;
+})
+
+document.addEventListener('keyup', (e) => {
+    clickableButtons.forEach(button => {
+        if(button.value === e.key) {
+            setNumberArray(e.key);
+        }
+    })
+
+    if(e.key === 'Backspace') {
+        deleteLastNumber();
+    }
 })
 
 // Set an event listener for each clickableButtons
